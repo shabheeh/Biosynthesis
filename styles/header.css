@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 26px;
+  font-family: var(--font-family-primary);
+  font-size: 16px;
+  background-color: var(--color-secondary);
+  color: white;
+  border-radius: 24px;
+  padding: 1px;
+  padding-right: 15px;
+}
+
+.nav-link {
+  padding: 10px;
+}
+
+.nav-link.active {
+  background-color: white;
+  border-radius: 24px;
+  color: black;
+}
+
+.auth-btns {
+  display: flex;
+  gap: 24px;
+  font-weight: 500;
+}
+
+.auth-btns button {
+  padding: 10px;
+}
+
+.btn-signup {
+  border-radius: 24px;
+  border: 1px solid black;
+  transition: var(--transition-btn-250);
+}
+
+.btn-signup:hover {
+  color: white;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}

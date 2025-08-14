@@ -1,0 +1,11 @@
+:root {
+  --color-primary: #3f7d58;
+  --color-secondary: #262a2d;
+  --color-gray-200: #f2f2f2;
+  --color-font-400: #121212;
+  --color-font-800: #636363;
+  --font-family-primary: "Sansation", sans-serif;
+  --font-family-secondary: "Open Sans", sans-serif;
+
+  --transition-btn-250: all ease-in-out 250ms;
+}

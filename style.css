@@ -1,3 +1,7 @@
+@import "/styles/variables.css";
+@import "/styles//header.css";
+@import "/styles/main.css";
+
 * {
   padding: 0;
   margin: 0;
@@ -5,11 +9,14 @@
 }
 body {
   background-color: white;
+  font-family: var(--font-family-secondary);
   font-size: 20px;
 }
 
 h1 {
   font-size: 74px;
+  font-family: var(--font-family-primary);
+  color: var(--color-font-400);
 }
 
 h2 {
@@ -24,43 +31,67 @@ h4 {
   font-size: 32px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 button {
   all: unset;
   cursor: pointer;
 }
 
+.btn {
+  padding: 16px 20px;
+  color: white;
+  border-radius: 20px;
+  background-color: var(--color-secondary);
+  transition: var(--transition-btn-250);
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+}
+
 .cta {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
   font-size: 16px;
 }
 
-.page-title {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: larger;
-  padding: 0;
+/* tabs */
+@media screen and (max-width: 1023px) {
+  body {
+    background-color: orange;
+  }
+  h1 {
+    font-size: 54px;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 34px;
+  }
+  h4 {
+    font-size: 26px;
+  }
 }
 
-.flip-s {
-  display: inline-block;
-  transform: scaleX(-1);
-}
-
-.nav-links {
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 50px;
-}
-
-.nav-cta {
-  display: inline-block;
-}
-
-.btn-cta {
-  padding: 10px;
-}
-
-.btn-cta:focus {
-  background-color: black;
+@media screen and (max-width: 767px) {
+  body {
+    background-color: yellow;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 20px;
+  }
 }
