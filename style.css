@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 74px;
+}
+
+h2 {
+  font-size: 54px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.cta {
+  font-size: 16px;
+}
+
+.page-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: larger;
+  padding: 0;
+}
+
+.flip-s {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+.nav-links {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.nav-cta {
+  display: inline-block;
+}
+
+.btn-cta {
+  padding: 10px;
+}
+
+.btn-cta:focus {
+  background-color: black;
+}
