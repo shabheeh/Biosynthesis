@@ -1,6 +1,7 @@
 @import "/styles/variables.css";
 @import "/styles//header.css";
 @import "/styles/main.css";
+@import "/styles/footer.css";
 
 * {
   padding: 0;
@@ -20,15 +21,24 @@ h1 {
 }
 
 h2 {
-  font-size: 54px;
+  font-size: 56px;
+  font-family: var(--font-family-primary);
+  color: var(--color-font-400);
+  font-weight: 400;
+  font-style: regular;
 }
 
 h3 {
   font-size: 42px;
+  font-family: var(--font-family-primary);
+  color: var(--color-font-400);
+  font-weight: 400;
 }
 
 h4 {
   font-size: 32px;
+  font-family: var(--font-family-primary);
+  font-weight: 400;
 }
 
 a {
@@ -46,7 +56,7 @@ button {
   color: white;
   border-radius: 20px;
   background-color: var(--color-secondary);
-  transition: var(--transition-btn-250);
+  transition: var(--transition-200);
 }
 
 .btn:hover {
@@ -57,13 +67,11 @@ button {
   font-family: var(--font-family-primary);
   font-weight: 400;
   font-size: 16px;
+  text-align: center;
 }
 
 /* tabs */
 @media screen and (max-width: 1023px) {
-  body {
-    background-color: orange;
-  }
   h1 {
     font-size: 54px;
   }
@@ -78,10 +86,8 @@ button {
   }
 }
 
+/* phones */
 @media screen and (max-width: 767px) {
-  body {
-    background-color: yellow;
-  }
   h1 {
     font-size: 42px;
   }

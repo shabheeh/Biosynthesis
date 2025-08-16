@@ -11,8 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <div>
@@ -38,13 +46,47 @@
         </nav>
       </div>
       <div class="cta auth-btns">
-        <button>Log In</button>
+        <button class="log-in">Log In</button>
         <button class="btn-signup">Sign up Free</button>
+      </div>
+      <div class="burger-menu" id="burgerMenu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
       </div>
     </header>
 
+    <div class="mobile-nav" id="mobileNav">
+      <nav class="mobile-nav-links">
+        <div class="mobile-nav-link active">
+          <a href="#">Home</a>
+        </div>
+        <div class="mobile-nav-link">
+          <a href="#">About Us</a>
+        </div>
+        <div class="mobile-nav-link">
+          <a href="#">Reviews</a>
+        </div>
+        <div class="mobile-nav-link">
+          <a href="#">Products</a>
+        </div>
+        <div class="mobile-nav-link">
+          <a href="#">Blog</a>
+        </div>
+      </nav>
+
+      <div class="nav-divider"></div>
+
+      <div class="mobile-auth-btns">
+        <button class="mobile-log-in">Log In</button>
+        <button class="mobile-btn-signup">Sign up Free</button>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
     <main>
-      <section class="hero">
+      <div class="hero">
         <div class="hero-label">
           <div class="hero-label-bullet"></div>
           <p>Top Agro Researcher’s</p>
@@ -58,12 +100,20 @@
             solutions
           </p>
         </div>
-        <div class="btn cta"><button>Get Started -></button></div>
-      </section>
+        <button class="hero-btn btn cta">
+          <span class="hero-btn-text">Get Started</span>
+          <span class="hero-btn-arrow">
+            <img src="./assets/icons/arrow-right.svg" alt="" />
+          </span>
+        </button>
+      </div>
 
-      <section class="banner">
+      <div class="banner">
         <div class="banner-img">
-          <img src="./assets//images/banner image.png" alt="banner image" />
+          <img
+            src="./assets//images/Agricultural-ladscape.png"
+            alt="agriculture image"
+          />
         </div>
         <div class="banner-text">
           <div class="banner-text-left">
@@ -71,18 +121,303 @@
           </div>
           <div class="banner-text-right">
             <p>
-              At <span class="banner-text-highlight">BioSynthesis</span>, we’re growing a greener, smarter future for
-              agriculture. With innovative tools and sustainable solutions, we
-              help farmers boost yields, cut waste, and protect the planet.
-              Together, we’re cultivating healthier crops, stronger communities,
-              and a brighter tomorrow.
+              At <span class="banner-text-highlight">BioSynthesis,</span> we’re
+              growing a greener, smarter future for agriculture. With innovative
+              tools and sustainable solutions, we help farmers boost yields, cut
+              waste, and protect the planet. Together, we’re cultivating
+              healthier crops, stronger communities, and a brighter tomorrow.
             </p>
           </div>
         </div>
-      </section>
+      </div>
+
+      <div class="carousel-container">
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="carousel-item">
+                <div class="carousel-card carousel-card-up">
+                  <div class="get-started-section">
+                    <h4>Get<br />Started Now</h4>
+                    <button class="get-started-btn">
+                      <img src="./assets/icons/arrow-right.svg" alt="" />
+                    </button>
+                  </div>
+                  <figure class="card">
+                    <img
+                      src="./assets/images/Vineyard-Landscape.png"
+                      alt="Vineyard Landscape image"
+                    />
+                  </figure>
+                  <figcaption>Organic Farm</figcaption>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-card carousel-card-down">
+                  <div class="get-started-section">
+                    <h4>Get<br />Started Now</h4>
+                    <button class="get-started-btn">
+                      <img src="./assets/icons/arrow-right.svg" alt="" />
+                    </button>
+                  </div>
+                  <figure class="card">
+                    <img src="./assets/images/81790.png" alt="Mud image" />
+                  </figure>
+                  <figcaption>Organic Fertilizer</figcaption>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-card carousel-card-up">
+                  <div class="get-started-section">
+                    <h4>Get<br />Started Now</h4>
+                    <button class="get-started-btn">
+                      <img src="./assets/icons/arrow-right.svg" alt="" />
+                    </button>
+                  </div>
+                  <figure class="card">
+                    <img
+                      src="./assets/images/Rice-Fields-Landscape.png"
+                      alt="Rice Fields Landscape image"
+                    />
+                  </figure>
+                  <figcaption>Technology Irrigation</figcaption>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-card carousel-card-down">
+                  <div class="get-started-section">
+                    <h4>Get<br />Started Now</h4>
+                    <button class="get-started-btn">
+                      <img src="./assets/icons/arrow-right.svg" alt="" />
+                    </button>
+                  </div>
+                  <figure class="card">
+                    <img
+                      src="./assets/images/Farm-Worker.png"
+                      alt="Farm Worker image"
+                    />
+                  </figure>
+                  <figcaption>Agricultural Monitoring</figcaption>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-nav-btns">
+              <button class="nav-btn prev-btn" onclick="prevSlide()">
+                <img src="./assets/icons/chevron-right.svg" alt="Previous" />
+              </button>
+              <button class="nav-btn next-btn" onclick="nextSlide()">
+                <img src="./assets/icons/chevron-right.svg" alt="Next" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-banner">
+        <div class="cta-banner-img">
+          <div class="cta-banner-title">
+            <h2>Transform Your Farm. Empower Your Future.</h2>
+          </div>
+          <div class="cta-banner-btn">
+            <button>
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="banner-text">
+          <div class="banner-text-left">
+            <h2>The Green Growth Hub: Innovation & Earthwise</h2>
+          </div>
+          <div class="banner-text-right">
+            <p>
+              Insights, tips, and stories from the world of sustainable farming
+              and innovative agriculture — offering expert advice, real-world
+              success stories, and the latest trends to help farmers embrace
+              smarter, eco-friendly practices. From cutting-edge technology to
+              time-tested solutions, we’re here to inspire and guide you on the
+              journey toward a more sustainable, productive future.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="read-more-cards">
+        <div class="card-vertical">
+          <figure class="card">
+            <img
+              src="./assets/images/Women-gardening.png"
+              alt="women gardening image"
+            />
+          </figure>
+          <div class="card-details">
+            <p class="card-caption">Farming Precision</p>
+            <p class="card-description">
+              Optimize your fields, reduce waste, and boost yields with smart,
+              precise farming solutions.
+            </p>
+            <button class="read-more-btn">
+              Read more<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-horizontal">
+          <figure class="card">
+            <img
+              src="./assets/images/Morning-patio.png"
+              alt="mornig Landscape image"
+            />
+          </figure>
+          <div class="card-details">
+            <p class="card-caption">Crop Surveillance</p>
+            <p class="card-description">
+              Monitor crop health in real-time with smart tools that detect
+              issues early and protect your yield.
+            </p>
+            <button class="read-more-btn">
+              Read more<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-vertical">
+          <figure class="card">
+            <img src="./assets/images/Vertical-garden.jpg" alt="garden image" />
+          </figure>
+          <div class="card-details">
+            <p class="card-caption">Automated Farming</p>
+            <p class="card-description">
+              Streamline your farm operations with smart automation for faster,
+              easier, and more efficient growth.
+            </p>
+            <button class="read-more-btn">
+              Read more<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-container">
+        <div class="contact-form-wrapper">
+          <form class="contact-form">
+            <h3>We'd love to help</h3>
+            <p>
+              Streamline your farm operations with smart automation for faster,
+              easier, and more efficient growth.
+            </p>
+            <div class="form-inputs">
+              <div class="name-inputs">
+                <div>
+                  <label for="firstName">First Name</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                  />
+                </div>
+                <div>
+                  <label for="lastName">Last Name</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                  />
+                </div>
+              </div>
+              <div class="email-input">
+                <label for="email">Email</label>
+                <input class="input" type="email" id="email" name="email" />
+              </div>
+              <div class="textarea-input">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+              </div>
+              <button class="cta btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <div>
+          <img
+            src="./assets/images/Forest-waterfall.png"
+            alt="waterfall image"
+          />
+        </div>
+      </div>
     </main>
     <footer>
-
+      <div class="footer-content-wrapper">
+        <div class="footer-left">
+          <div class="footer-logo-container">
+            <div class="footer-logo">
+              <span>
+                <img src="./public/Footer-logo.svg" alt="" />
+              </span>
+            </div>
+            <p>
+              Monitor crop health in real-time with smart tools that detect
+              issues early and protect your yield.
+            </p>
+          </div>
+          <div class="footer-social">
+            <a href="#"
+              ><img src="./assets/icons/instagram.svg" alt="instagram logo"
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/x-twitter.svg" alt="x-twitter logo"
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/linkedIn.svg" alt="linkedIn logo"
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/facebook.svg" alt="facebook logo"
+            /></a>
+          </div>
+        </div>
+        <div></div>
+        <div class="footer-right">
+          <div class="footer-list">
+            <p>COMPANY</p>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About</a> Us</li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <p>RESOURCES</p>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Customer Stories</a></li>
+              <li><a href="#">Info</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <p>CAREER</p>
+            <ul>
+              <li><a href="#">Job</a></li>
+              <li><a href="#">Hiring</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Tips & Tricks</a></li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <p>HELP</p>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-end-text">
+        <span>REEP TO GROW</span>
+      </div>
     </footer>
     <script src="main.js"></script>
   </body>
